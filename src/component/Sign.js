@@ -1,8 +1,6 @@
 import React from 'react'
 import GoogleButton from 'react-google-button'
-
 import {auth} from '../component/firebase'
-import {useAuthState} from 'react-firebase-hooks/auth'
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth'
 
 const styles = {
@@ -24,7 +22,7 @@ function Sign() {
      <div className={styles.wrapper}>
        <GoogleButton onClick={signInGoogle}/>
      </div>
-    
+     
     </div>
   )
 }
