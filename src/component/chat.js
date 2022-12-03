@@ -9,7 +9,7 @@ import {query , collection, orderBy , onSnapshot} from 'firebase/firestore'
 
 
 const styles = {
-  container: 'flex flex-col p-[10px] bg-gray-500 mb-10 max-w-[728px]  overflow-auto  scrollbar-hide '
+  container: 'flex flex-col p-[10px] bg-gray-500 mb-10 max-w-[728px] h-screen overflow-auto  scrollbar-hide '
 }
 
 function Chat() {
