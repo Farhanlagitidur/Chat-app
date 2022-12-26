@@ -10,7 +10,6 @@ const styles = {
    
   }
 
-
 function SendMassage({scroll}) {
     const [input, setInput] = useState('')
 
@@ -20,7 +19,6 @@ function SendMassage({scroll}) {
         return
       }
       const {uid, displayName} = auth.currentUser;
-      console.log(uid,displayName)
 
       await addDoc(collection(db,'messages'), {
         text:input,
